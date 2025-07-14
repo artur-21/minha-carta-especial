@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma Carta Especial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Envelope Fechado (Tela Inicial) -->
+    <div id="envelope-container" class="envelope-container">
+        <div class="envelope">
+            <div class="envelope-flap"></div>
+            <div class="envelope-body">
+                <div class="envelope-seal">❤️</div>
+            </div>
+        </div>
+        <p class="click-instruction">Clique para abrir a carta</p>
+    </div>
+
+    <!-- Carta Aberta (Conteúdo Principal) -->
+    <div id="letter-container" class="letter-container hidden">
+        <!-- Player de Música -->
+        <div class="music-player">
+            <audio id="background-music" loop>
+                <source src="confident.mp3" type="audio/mpeg">
+                <source src="confident.wav" type="audio/wav">
+                <!-- INSTRUÇÕES: Para adicionar a música "Confident" do Justin Bieber:
+                     1. Baixe o arquivo MP3 da música
+                     2. Renomeie para "confident.mp3" 
+                     3. Coloque na mesma pasta deste arquivo HTML
+                     4. A música tocará automaticamente -->
+            </audio>
+            <button id="music-toggle" class="music-btn">🎵</button>
+            <span class="music-label">Confident - Justin Bieber</span>
+        </div>
+
+        <!-- Papel da Carta -->
+        <div class="letter-paper">
+            <!-- Contador em Tempo Real -->
+            <div class="counter-section">
+                <h3 class="counter-title">O tempo que meu coração bate mais forte por você:</h3>
+                <div id="time-counter" class="time-counter">
+                    <div class="time-unit">
+                        <span id="days">0</span>
+                        <label>dias</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="hours">0</span>
+                        <label>horas</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="minutes">0</span>
+                        <label>minutos</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="seconds">0</span>
+                        <label>segundos</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Texto da Carta -->
+            <div class="letter-content">
+                <p class="greeting">Oi,</p>
+                
+                <p>Eu sei que o tempo e as prioridades nos fizeram dar uma pausa… mas a verdade é que você nunca saiu do meu peito.</p>
+                
+                <p>A gente viveu algo especial, pelo menos pra mim foi e mesmo com essa pausa, isso nunca deixou de ser real pra mim. Eu respeito o nosso momento, os nossos objetivos, e admiro ainda mais você por ser uma mulher firme em Deus e nos seus propósitos.</p>
+                
+                <p>Mas eu preciso te dizer com sinceridade: o meu desejo é que um dia, quando for o tempo certo — o tempo de Deus —, você seja minha mulher, minha amada, quem sabe até minha esposa kkkk, algo verdadeiro e cheio de propósito, com maturidade, com paz e com Deus no centro.</p>
+                
+                <p>Enquanto esse dia não chega, sigo orando por nós e cuidando de mim pra me tornar o homem digno de caminhar ao seu lado. Porque você vale isso… e muito mais.</p>
+                
+                <p class="bible-verse">E em Cânticos 4:7, encontrei a mais pura tradução da sua beleza.</p>
+                
+                <p class="signature">Com carinho,<br><strong>Artur</strong></p>
+            </div>
+
+            <!-- Galeria de Fotos -->
+            <div class="photo-gallery">
+                <h3 class="gallery-title">Momentos que guardo no coração</h3>
+                <div class="gallery-grid">
+                    <div class="photo-item" onclick="openModal('images/foto1.jpg')">
+                        <img src="images/foto1.jpg" alt="Momento especial 1">
+                    </div>
+                    <div class="photo-item" onclick="openModal('images/foto2.jpg')">
+                        <img src="images/foto2.jpg" alt="Momento especial 2">
+                    </div>
+                    <div class="photo-item" onclick="openModal('images/foto3.jpg')">
+                        <img src="images/foto3.jpg" alt="Momento especial 3">
+                    </div>
+                    <div class="photo-item" onclick="openModal('images/foto4.jpg')">
+                        <img src="images/foto4.jpg" alt="Momento especial 4">
+                    </div>
+                    <div class="photo-item" onclick="openModal('images/foto5.jpg')">
+                        <img src="images/foto5.jpg" alt="Momento especial 5">
+                    </div>
+                    <div class="photo-item" onclick="openModal('images/foto6.png')">
+                        <img src="images/foto6.png" alt="Momento especial 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Visualização de Fotos -->
+    <div id="photo-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="" alt="Foto ampliada">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

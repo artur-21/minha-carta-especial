@@ -1,0 +1,38 @@
+🎵 INSTRUÇÕES PARA ADICIONAR A MÚSICA
+==========================================
+
+❌ PROBLEMA ATUAL: A música não está tocando porque o arquivo "confident.mp3" é apenas um placeholder.
+
+✅ SOLUÇÃO SIMPLES:
+
+1. BAIXE a música "Confident" do Justin Bieber em MP3
+   - YouTube: Use um conversor online (ex: yt1s.com, y2mate.com)
+   - Spotify: Use um downloader se tiver premium
+   - Compre digitalmente: iTunes, Amazon, etc.
+
+2. RENOMEIE o arquivo baixado para: confident.mp3
+   (exatamente assim, sem espaços)
+
+3. SUBSTITUA o arquivo "confident.mp3" que está nesta pasta
+   (arraste e solte por cima do arquivo existente)
+
+4. ABRA o site novamente
+   - A música deve tocar automaticamente quando abrir a carta
+   - Se não tocar, clique no botão 🎵
+
+🔧 TESTE RÁPIDO:
+Se quiser apenas testar se funciona, baixe QUALQUER música em MP3, 
+renomeie para "confident.mp3" e substitua. Depois troque pela música correta.
+
+⚠️ IMPORTANTE:
+- O arquivo DEVE se chamar exatamente "confident.mp3"
+- DEVE estar na mesma pasta do arquivo "index.html"
+- DEVE ser um arquivo MP3 real, não um link ou atalho
+
+💡 DICA:
+Teste primeiro com uma música qualquer para ver se o sistema funciona,
+depois substitua pela "Confident" do Justin Bieber.
+
+==========================================
+Se seguir estes passos, a música funcionará perfeitamente! 🎉
+
